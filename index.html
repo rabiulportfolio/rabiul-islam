@@ -6,9 +6,8 @@
 <title>Rabiul Final Fixed</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:Arial,sans-serif;color:#fff;overfloe-x:hidden;min-height:100vh;backgroid:liner-gradient(135deg,#06142b,#0a2347,#12347,#12373,06142b);background-size:400% 400%;animation:moveBg 10s ease infinite;}
-.bg{position:fixed;inset:0;background:linear-gradient(#03233f,#02111f);z-index:-2}
-.wave{position:absolute;left:0;width:200%;height:220px;background:rgba(0,170,255,.24);border-radius:43%;animation:m 12s linear infinite}
+body{font-family:Arial,sans-serif;color:#fff;overfloe-x:hidden;min-height:100vh;background:linear-gradient(135deg,#06142b,#0a2347,#12347,#123d73,06142b);background-size:400% 400%;animation:moveBg 10s ease infinite;}
+.bg{position:fixed;inset:0;background:transparent;z-index:-2}
 .wave:nth-child(1){bottom:-40px}.wave:nth-child(2){bottom:-80px;opacity:.5;animation-duration:16s}.wave:nth-child(3){bottom:-120px;opacity:.35;animation-duration:20s}
 @keyframes m{to{transform:translateX(-50%) rotate(360deg)}}
 .wrap{max-width:980px;margin:auto;padding:24px}
@@ -17,7 +16,8 @@ body{font-family:Arial,sans-serif;color:#fff;overfloe-x:hidden;min-height:100vh;
 h1{font-size:48px}span{color:#d9b87a}p{color:#cbd4dc;margin-top:8px}
 .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:18px}
 .box{padding:18px;border-radius:18px;background:rgba(255,255,255,.07)}
-@media(max-width:700px){.hero{flex-direction:column}.hero img{max-width:100%;width:100%}h1{font-size:34px}}@keyframes moveBg{0%{background-position:0% 50%;}50%{background-position:100% 50%;}100%{background-position:o% 50%;}}
+@media(max-width:700px){.hero{flex-direction:column}.hero img{max-width:100%}h1{font-size:34px}
+@keyframes moveBg{0%{background-position:0% 50%;}50%{background-position:100% 50$;}100%{background-position:0% 50%;}}                        
 </style></head>
 <body>
 <div class='bg'><div class='wave'></div><div class='wave'></div><div class='wave'></div></div>
